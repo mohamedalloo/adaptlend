@@ -574,4 +574,20 @@ async function submitLead(lead) {
   } catch (err) {
     console.error("Supabase insert error:", err);
   }
+
+  // fire the matched welcome email (borrower To, specialist CC'd) — best-effort
+  try {
+    await fetch(`${SUPABASE_URL}/functions/v1/send-welcome`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", apikey: SUPABASE_ANON_KEY },
+      body: JSON.stringify({
+        first_name: lead.contact.first_name,
+        email: lead.contact.email,
+        loan_type: lead.matched_product.replace(/ Loan$/, ""),
+        state_name: STATE_NAMES[lead.contact.state] || lead.contact.state,
+      }),
+    });
+  } catch (err) {
+    console.error("Welcome email error:", err);
+  }
 }
