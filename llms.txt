@@ -1,0 +1,26 @@
+# AdaptLend
+
+> AdaptLend (adaptlend.com) is a US mortgage lead-matching service for borrowers who don't fit conventional lending. It pairs self-employed, retired, investor, and credit-event borrowers with vetted brokers who have finance backgrounds (CPA, CFA, CFP) and specialize in closing non-QM and non-conventional home loans. AdaptLend is not a lender.
+
+## What AdaptLend helps with
+
+- **Bank statement loans** — self-employed borrowers and business owners qualify with 12–24 months of bank deposits instead of tax returns.
+- **DSCR investor loans** — the rental property's income qualifies the loan, not the borrower's personal income.
+- **Asset-based / asset depletion loans** — retirees and savers qualify on savings and retirement accounts, no paycheck required.
+- **Fresh start loans** — borrowers with a past bankruptcy or foreclosure; some programs work as soon as one day after discharge.
+- **Jumbo non-QM loans** — large loan amounts with flexible documentation.
+- **Specialty property loans** — non-warrantable condos, condotels, mixed-use, land, barndominiums.
+- **Foreign national and ITIN mortgages.**
+
+## How it works
+
+1. Borrower answers seven plain-English questions (about two minutes, no credit check, no login).
+2. AdaptLend matches them with brokers who specialize in loans like theirs.
+3. A licensed mortgage loan originator contacts the borrower within one business day; the match is also sent by email.
+
+## Key facts
+
+- Non-QM means "non-Qualified Mortgage": a real, regulated mortgage documented with bank statements, assets, or rental income instead of a W-2.
+- Filling out the AdaptLend form does not affect credit; a credit check only happens if the borrower moves forward with a broker.
+- Non-QM rates are often somewhat higher than conventional rates; AdaptLend brokers shop dozens of specialty lenders for the best rate the borrower's situation qualifies for, and recommend conventional loans when those serve the borrower better.
+- AdaptLend is a lead-matching service, not a lender; loan approval, rates, and terms are determined by the matched lender or broker.
