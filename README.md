@@ -72,4 +72,5 @@ The contact step requires a consent checkbox with express-written-consent langua
 - NMLS #000000 in the footer
 - The three example broker profiles
 - **Reviews and stats are fictional placeholders** (landing page and celebration screen, plus the 4.9/5, $180M+, 21-day stats). Replace with real, verifiable reviews before launch — publishing fabricated reviews violates FTC rules.
-- Terms of Use and Privacy Policy pages don't exist yet; the consent checkbox links to "#". Both are needed before collecting real leads.
+- Terms of Use (terms.html) and Privacy Policy (privacy.html) are drafted and linked from the consent checkbox and footer. **Have a licensed attorney review them** (plus the footer disclosures and TCPA consent language) before spending on traffic — they're a solid draft, not legal advice.
+- Contact emails referenced in the legal pages (legal@adaptlend.com, privacy@adaptlend.com) need real mailboxes once the domain is live.

@@ -339,6 +339,17 @@ svg { display: block; }
 .footer-eho { display: flex; align-items: center; gap: 8px; }
 .footer-eho svg { width: 18px; height: 18px; }
 
+/* ---------- Legal pages ---------- */
+.legal-page { padding: 72px 0 96px; }
+.legal-page .container { max-width: 760px; }
+.legal-page h1 { font-size: clamp(32px, 4.4vw, 44px); margin-bottom: 10px; }
+.legal-updated { font-size: 13px; color: var(--muted); margin-bottom: 36px; }
+.legal-page h2 { font-size: 20px; margin: 36px 0 12px; }
+.legal-page p, .legal-page li { font-size: 15.5px; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+.legal-page ul { padding-left: 22px; margin-bottom: 12px; }
+.legal-page a { color: var(--accent); }
+.site-footer a { color: inherit; }
+
 /* ============ Match form overlay ============ */
 .form-overlay {
   position: fixed;

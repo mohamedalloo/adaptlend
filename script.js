@@ -345,7 +345,7 @@ function renderContact() {
       </div>
       <div class="consent">
         <input type="checkbox" id="cConsent">
-        <label for="cConsent">I agree to AdaptLend's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and I give my express written consent for AdaptLend and its participating brokers and loan originators to contact me about my inquiry at the number and email above — including by automated calls, prerecorded or artificial voice, texts, and email, even if my number is on a do-not-call registry. Consent isn't a condition of getting a loan, message and data rates may apply, and I can opt out anytime (reply STOP to texts).</label>
+        <label for="cConsent">I agree to AdaptLend's <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a> and <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>, and I give my express written consent for AdaptLend and its participating brokers and loan originators to contact me about my inquiry at the number and email above — including by automated calls, prerecorded or artificial voice, texts, and email, even if my number is on a do-not-call registry. Consent isn't a condition of getting a loan, message and data rates may apply, and I can opt out anytime (reply STOP to texts).</label>
       </div>
     </div>
     <p class="form-error" id="contactError"></p>
