@@ -1,8 +1,8 @@
 /* AdaptLend match form — one big friendly question per screen. */
 
 /* ---------- Supabase (see README.md for table setup) ---------- */
-const SUPABASE_URL = "";      // e.g. "https://yourproject.supabase.co"
-const SUPABASE_ANON_KEY = ""; // the anon/public key from Project Settings → API
+const SUPABASE_URL = "https://jaqtpjsnnsyxispgyzya.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_sXx0Rk_xOE6UmULnzQ94LA_ZdsWRnYW"; // publishable key — safe to expose; RLS is insert-only
 
 /* Custom stroke icons, 24px grid. Rendered inside .opt-icon containers. */
 const ICONS = {

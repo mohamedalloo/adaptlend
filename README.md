@@ -67,9 +67,12 @@ For production traffic volumes, swap in Google Places or Mapbox in `attachAddres
 
 The contact step requires a consent checkbox with express-written-consent language (automated calls/texts/prerecorded voice, not a condition of the loan, STOP to opt out). The checked state is stored as `tcpa_consent` with `created_at` as the timestamp. For stronger evidence, consider also storing the exact consent text shown (add a `consent_text` column) and have a lawyer review the wording before launch.
 
+## Entity
+
+AdaptLend is a DBA of Honest Casa LLC (NMLS #1566096, DRE #02022356). The footer and legal pages reference these license numbers.
+
 ## Placeholders to replace before launch
 
-- NMLS #000000 in the footer
 - The three example broker profiles
 - **Reviews and stats are fictional placeholders** (landing page and celebration screen, plus the 4.9/5, $180M+, 21-day stats). Replace with real, verifiable reviews before launch — publishing fabricated reviews violates FTC rules.
 - Terms of Use (terms.html) and Privacy Policy (privacy.html) are drafted and linked from the consent checkbox and footer. **Have a licensed attorney review them** (plus the footer disclosures and TCPA consent language) before spending on traffic — they're a solid draft, not legal advice.
