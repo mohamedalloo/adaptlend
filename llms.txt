@@ -21,6 +21,14 @@
 - [Fresh start loans](https://adaptlend.com/fresh-start-loans.html) — mortgage waiting periods after bankruptcy or foreclosure (conventional vs FHA vs non-QM) and how to shorten them.
 - [Non-warrantable condo loans](https://adaptlend.com/non-warrantable-condo-loans.html) — what makes a building non-warrantable (condotels, litigation, investor concentration) and how to finance one.
 - [ITIN mortgages](https://adaptlend.com/itin-mortgage.html) — buying a U.S. home with an ITIN instead of a Social Security number.
+- [Self-employed mortgage guide](https://adaptlend.com/self-employed-mortgage.html) — the write-off paradox and five documentation paths compared (conventional, bank statement, 1099, P&L-only, asset-based).
+- [1099 mortgages](https://adaptlend.com/1099-mortgage.html) — contractors qualify on 1099 totals minus a ~10% expense factor; no tax returns.
+- [No-doc loans in 2026](https://adaptlend.com/no-doc-loans.html) — what replaced stated-income loans: the legal, regulated low-documentation options today.
+- [Jumbo non-QM loans](https://adaptlend.com/jumbo-non-qm.html) — above-conforming loans with bank statement/asset documentation and interest-only options.
+- [Foreign national mortgages](https://adaptlend.com/foreign-national-loans.html) — non-residents financing U.S. property with no SSN or U.S. credit; typically 25–30% down.
+- [Bank statement income calculator](https://adaptlend.com/bank-statement-income-calculator.html) — deposits → lender-countable income.
+- [Asset depletion calculator](https://adaptlend.com/asset-depletion-calculator.html) — savings → qualifying monthly income.
+- [All guides](https://adaptlend.com/guides.html)
 - [About AdaptLend](https://adaptlend.com/about.html)
 
 ## How it works

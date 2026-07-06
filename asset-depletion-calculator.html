@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asset Depletion Calculator: Turn Savings Into Qualifying Income | AdaptLend</title>
+  <meta name="description" content="Free asset depletion calculator: see the monthly qualifying income your savings, brokerage, and retirement accounts could generate on a mortgage application — no paycheck required.">
+  <link rel="canonical" href="https://adaptlend.com/asset-depletion-calculator.html">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <meta name="theme-color" content="#0e5f45">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e5f45'/%3E%3Cpath d='M20 46 32 18l12 28' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.5 36h13' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AdaptLend">
+  <meta property="og:url" content="https://adaptlend.com/asset-depletion-calculator.html">
+  <meta property="og:title" content="Asset Depletion Calculator | AdaptLend">
+  <meta property="og:description" content="See the monthly qualifying income your savings could generate on a mortgage application.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "AdaptLend", "item": "https://adaptlend.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://adaptlend.com/guides.html" },
+          { "@type": "ListItem", "position": 3, "name": "Asset depletion calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "AdaptLend Asset Depletion Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "AdaptLend", "url": "https://adaptlend.com/" }
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Adapt<span>Lend</span></a>
+      <div class="header-right">
+        <a class="btn btn-primary" href="/?match=retired">Get matched</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="guide-page">
+    <div class="container">
+      <p class="crumb"><a href="index.html">AdaptLend</a> → <a href="guides.html">Guides</a> → Asset depletion calculator</p>
+      <h1>Asset Depletion Calculator</h1>
+      <p class="byline">See the monthly income your savings could "earn" on a mortgage application. Free, instant, nothing stored.</p>
+
+      <div class="calc">
+        <div class="field-row">
+          <div class="contact-field">
+            <label for="bankAssets">Bank accounts &amp; CDs</label>
+            <input id="bankAssets" type="text" inputmode="decimal" placeholder="150,000">
+          </div>
+          <div class="contact-field">
+            <label for="investAssets">Brokerage &amp; retirement <span class="label-note">counted at ~75%</span></label>
+            <input id="investAssets" type="text" inputmode="decimal" placeholder="650,000">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="contact-field">
+            <label for="downPayment">Minus your planned down payment &amp; closing costs</label>
+            <input id="downPayment" type="text" inputmode="decimal" placeholder="120,000">
+          </div>
+          <div class="contact-field">
+            <label for="months">Amortization schedule</label>
+            <select id="months">
+              <option value="360">360 months (common)</option>
+              <option value="240">240 months</option>
+              <option value="120">120 months (higher income, stricter programs)</option>
+            </select>
+          </div>
+        </div>
+        <p class="field-note">Brokerage and retirement balances are discounted (commonly ~70–80%) to allow for market swings; we use 75% here. Exact rules vary by lender.</p>
+        <div class="calc-result" id="result" hidden>
+          <strong id="income">—</strong>
+          <span id="note"></span>
+        </div>
+      </div>
+
+      <h2>What this number means</h2>
+      <p>Asset depletion lenders divide your eligible post-down-payment assets across a schedule (often 360 months) and treat the result as monthly income — <strong>on paper only</strong>. You never have to actually withdraw on that schedule; it's purely how the file qualifies. This paper income stacks on top of Social Security, pension, or any other income you already receive.</p>
+      <p>How the programs work, which assets count, and the honest costs — all in the <a href="asset-based-loans.html">asset-based loan guide</a>.</p>
+
+      <div class="cta-banner">
+        <h3>Your savings worked hard. Let them qualify you.</h3>
+        <p>Two minutes, no credit check. Get matched with a specialist who qualifies retirees and savers on assets every month.</p>
+        <a class="btn btn-primary" href="/?match=retired">Get matched with a specialist</a>
+      </div>
+
+      <div class="guide-related">
+        <p>Related: <a href="asset-based-loans.html">Asset-based loan guide</a> · <a href="dscr-calculator.html">DSCR calculator</a> · <a href="bank-statement-income-calculator.html">Bank statement income calculator</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-legal">© 2026 Honest Casa LLC dba AdaptLend. All rights reserved. · NMLS #1566096 · DRE #02022356 · <a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a></p>
+      <p class="footer-legal">Estimates are educational only and not a loan offer or approval. AdaptLend is a mortgage lead-matching service, not a lender.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const bank = document.getElementById("bankAssets");
+      const invest = document.getElementById("investAssets");
+      const down = document.getElementById("downPayment");
+      const months = document.getElementById("months");
+      const result = document.getElementById("result");
+      const incomeEl = document.getElementById("income");
+      const noteEl = document.getElementById("note");
+
+      const parse = (v) => parseFloat(String(v).replace(/[^0-9.]/g, "")) || 0;
+
+      function update() {
+        const eligible = parse(bank.value) + parse(invest.value) * 0.75 - parse(down.value);
+        const m = parseInt(months.value, 10);
+        if (eligible > 0 && (parse(bank.value) || parse(invest.value))) {
+          const income = eligible / m;
+          incomeEl.textContent = "$" + Math.round(income).toLocaleString() + "/mo";
+          noteEl.textContent = "Estimated qualifying income from $" + Math.round(eligible).toLocaleString() +
+            " of eligible assets over " + m + " months — before adding Social Security, pension, or other income. You never actually withdraw on this schedule.";
+          result.hidden = false;
+        } else {
+          result.hidden = true;
+        }
+      }
+
+      [bank, invest, down].forEach((el) => el.addEventListener("input", update));
+      months.addEventListener("change", update);
+    })();
+  </script>
+
+</body>
+</html>

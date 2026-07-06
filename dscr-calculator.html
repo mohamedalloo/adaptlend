@@ -17,12 +17,24 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "AdaptLend", "item": "https://adaptlend.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://adaptlend.com/guides.html" },
+          { "@type": "ListItem", "position": 3, "name": "DSCR calculator" }
+        ]
+      },
+      {
     "@type": "WebApplication",
     "name": "AdaptLend DSCR Calculator",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "publisher": { "@type": "Organization", "name": "AdaptLend", "url": "https://adaptlend.com/" }
+      }
+    ]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +55,7 @@
 
   <main class="guide-page">
     <div class="container">
-      <p class="crumb"><a href="index.html">AdaptLend</a> → <a href="index.html#guides">Guides</a> → DSCR calculator</p>
+      <p class="crumb"><a href="index.html">AdaptLend</a> → <a href="guides.html">Guides</a> → DSCR calculator</p>
       <h1>DSCR Calculator</h1>
       <p class="byline">Debt-service coverage ratio = monthly rent ÷ monthly payment (PITIA). Free, instant, nothing stored.</p>
 

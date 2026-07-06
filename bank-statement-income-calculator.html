@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Statement Income Calculator: What Will a Lender Count? | AdaptLend</title>
+  <meta name="description" content="Free calculator: convert your average monthly bank deposits into the qualifying income a bank statement lender would count — personal or business accounts, with expense factor.">
+  <link rel="canonical" href="https://adaptlend.com/bank-statement-income-calculator.html">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <meta name="theme-color" content="#0e5f45">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e5f45'/%3E%3Cpath d='M20 46 32 18l12 28' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.5 36h13' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AdaptLend">
+  <meta property="og:url" content="https://adaptlend.com/bank-statement-income-calculator.html">
+  <meta property="og:title" content="Bank Statement Income Calculator | AdaptLend">
+  <meta property="og:description" content="Convert monthly deposits into the qualifying income a lender would count.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "AdaptLend", "item": "https://adaptlend.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://adaptlend.com/guides.html" },
+          { "@type": "ListItem", "position": 3, "name": "Bank statement income calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "AdaptLend Bank Statement Income Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "AdaptLend", "url": "https://adaptlend.com/" }
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Adapt<span>Lend</span></a>
+      <div class="header-right">
+        <a class="btn btn-primary" href="/?match=business">Get matched</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="guide-page">
+    <div class="container">
+      <p class="crumb"><a href="index.html">AdaptLend</a> → <a href="guides.html">Guides</a> → Bank statement income calculator</p>
+      <h1>Bank Statement Income Calculator</h1>
+      <p class="byline">Estimate the qualifying income a bank statement lender would count. Free, instant, nothing stored.</p>
+
+      <div class="calc">
+        <div class="field-row">
+          <div class="contact-field">
+            <label for="deposits">Average monthly deposits</label>
+            <input id="deposits" type="text" inputmode="decimal" placeholder="18,500">
+          </div>
+          <div class="contact-field">
+            <label for="acct">Account type</label>
+            <select id="acct">
+              <option value="1">Personal account (100% counted)</option>
+              <option value="0.5">Business account (50% expense factor)</option>
+              <option value="custom">Business — custom expense factor</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row" id="customRow" hidden>
+          <div class="contact-field">
+            <label for="factor">Expense factor % <span class="label-note">what your CPA would document as business expenses</span></label>
+            <input id="factor" type="text" inputmode="numeric" placeholder="35">
+          </div>
+          <div></div>
+        </div>
+        <p class="field-note">Tip: average your deposits over 12–24 months; exclude transfers between your own accounts — lenders do.</p>
+        <div class="calc-result" id="result" hidden>
+          <strong id="income">—</strong>
+          <span id="note"></span>
+        </div>
+      </div>
+
+      <h2>How lenders actually do this math</h2>
+      <ul>
+        <li><strong>Personal statements:</strong> deposits generally count in full — the assumption is business expenses already came out before you paid yourself.</li>
+        <li><strong>Business statements:</strong> an expense factor approximates your costs. Many programs default to 50%; a CPA letter documenting a lower real expense rate (say 30%) raises your qualifying income accordingly.</li>
+        <li><strong>What gets excluded:</strong> transfers between your own accounts, loan proceeds, one-off windfalls. Consistent, explainable deposits are what carry a file.</li>
+      </ul>
+      <p>Full program details — down payments, credit, honest rate expectations — in the <a href="bank-statement-loans.html">bank statement loan guide</a>.</p>
+
+      <div class="cta-banner">
+        <h3>Like your number? Make it official.</h3>
+        <p>Two minutes, no credit check. Get matched with a specialist who closes bank statement loans every month.</p>
+        <a class="btn btn-primary" href="/?match=business">Get matched with a specialist</a>
+      </div>
+
+      <div class="guide-related">
+        <p>Related: <a href="bank-statement-loans.html">Bank statement loan guide</a> · <a href="self-employed-mortgage.html">Self-employed mortgage guide</a> · <a href="dscr-calculator.html">DSCR calculator</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-legal">© 2026 Honest Casa LLC dba AdaptLend. All rights reserved. · NMLS #1566096 · DRE #02022356 · <a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a></p>
+      <p class="footer-legal">Estimates are educational only and not a loan offer or approval. AdaptLend is a mortgage lead-matching service, not a lender.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const deposits = document.getElementById("deposits");
+      const acct = document.getElementById("acct");
+      const factor = document.getElementById("factor");
+      const customRow = document.getElementById("customRow");
+      const result = document.getElementById("result");
+      const incomeEl = document.getElementById("income");
+      const noteEl = document.getElementById("note");
+
+      const parse = (v) => parseFloat(String(v).replace(/[^0-9.]/g, "")) || 0;
+
+      function update() {
+        customRow.hidden = acct.value !== "custom";
+        const d = parse(deposits.value);
+        let mult;
+        let label;
+        if (acct.value === "custom") {
+          const f = Math.min(Math.max(parse(factor.value), 0), 95);
+          mult = (100 - f) / 100;
+          label = "business deposits with a " + f + "% documented expense factor";
+        } else {
+          mult = parseFloat(acct.value);
+          label = mult === 1 ? "personal-account deposits, counted in full" : "business deposits with the standard 50% expense factor";
+        }
+        if (d > 0) {
+          const income = d * mult;
+          incomeEl.textContent = "$" + Math.round(income).toLocaleString() + "/mo";
+          noteEl.textContent = "Estimated qualifying income from " + label + ". That's $" + Math.round(income * 12).toLocaleString() + " a year in a lender's eyes.";
+          result.hidden = false;
+        } else {
+          result.hidden = true;
+        }
+      }
+
+      deposits.addEventListener("input", update);
+      factor.addEventListener("input", update);
+      acct.addEventListener("change", update);
+    })();
+  </script>
+
+</body>
+</html>
