@@ -12,6 +12,17 @@
 - **Specialty property loans** — non-warrantable condos, condotels, mixed-use, land, barndominiums.
 - **Foreign national and ITIN mortgages.**
 
+## Guides (plain-English explainers)
+
+- [Bank statement loans](https://adaptlend.com/bank-statement-loans.html) — qualifying with 12–24 months of deposits instead of tax returns; typical down payments, credit, and honest rate expectations.
+- [DSCR investor loans](https://adaptlend.com/dscr-loans.html) — how debt-service coverage ratio works (rent ÷ PITIA), what ratios lenders want, LLC vesting, prepayment penalties.
+- [Free DSCR calculator](https://adaptlend.com/dscr-calculator.html) — instant rent-versus-payment ratio tool.
+- [Asset-based / asset depletion mortgages](https://adaptlend.com/asset-based-loans.html) — how retirees qualify by converting savings into paper income; which assets count.
+- [Fresh start loans](https://adaptlend.com/fresh-start-loans.html) — mortgage waiting periods after bankruptcy or foreclosure (conventional vs FHA vs non-QM) and how to shorten them.
+- [Non-warrantable condo loans](https://adaptlend.com/non-warrantable-condo-loans.html) — what makes a building non-warrantable (condotels, litigation, investor concentration) and how to finance one.
+- [ITIN mortgages](https://adaptlend.com/itin-mortgage.html) — buying a U.S. home with an ITIN instead of a Social Security number.
+- [About AdaptLend](https://adaptlend.com/about.html)
+
 ## How it works
 
 1. Borrower answers seven plain-English questions (about two minutes, no credit check, no login).

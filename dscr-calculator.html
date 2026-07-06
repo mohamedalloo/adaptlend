@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free DSCR Calculator: Will the Rent Cover the Payment? | AdaptLend</title>
+  <meta name="description" content="Free DSCR calculator. Enter rent and the full monthly payment (PITIA) to get your debt-service coverage ratio instantly — and see how lenders will read your deal.">
+  <link rel="canonical" href="https://adaptlend.com/dscr-calculator.html">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <meta name="theme-color" content="#0e5f45">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e5f45'/%3E%3Cpath d='M20 46 32 18l12 28' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.5 36h13' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AdaptLend">
+  <meta property="og:url" content="https://adaptlend.com/dscr-calculator.html">
+  <meta property="og:title" content="Free DSCR Calculator | AdaptLend">
+  <meta property="og:description" content="Enter rent and payment, get your debt-service coverage ratio instantly.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AdaptLend DSCR Calculator",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "AdaptLend", "url": "https://adaptlend.com/" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Adapt<span>Lend</span></a>
+      <div class="header-right">
+        <a class="btn btn-primary" href="/?match=investor">Get matched</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="guide-page">
+    <div class="container">
+      <p class="crumb"><a href="index.html">AdaptLend</a> → <a href="index.html#guides">Guides</a> → DSCR calculator</p>
+      <h1>DSCR Calculator</h1>
+      <p class="byline">Debt-service coverage ratio = monthly rent ÷ monthly payment (PITIA). Free, instant, nothing stored.</p>
+
+      <div class="calc">
+        <div class="field-row">
+          <div class="contact-field">
+            <label for="rent">Monthly rent</label>
+            <input id="rent" type="text" inputmode="decimal" placeholder="2,400">
+          </div>
+          <div class="contact-field">
+            <label for="pitia">Monthly payment (PITIA)</label>
+            <input id="pitia" type="text" inputmode="decimal" placeholder="2,000">
+          </div>
+        </div>
+        <p class="field-note">PITIA = principal + interest + property taxes + insurance + HOA/association dues.</p>
+        <div class="calc-result" id="result" hidden>
+          <strong id="ratio">—</strong>
+          <span id="verdict"></span>
+        </div>
+      </div>
+
+      <h2>How lenders read your number</h2>
+      <ul>
+        <li><strong>1.25 or higher</strong> — a strong deal. Expect the best DSCR pricing and the widest lender choice.</li>
+        <li><strong>1.00 – 1.24</strong> — the rent covers the payment; most DSCR lenders are comfortable here.</li>
+        <li><strong>Below 1.00</strong> — negative coverage. Still closeable with some lenders, but expect a higher rate and a larger down payment. Sometimes a bigger down payment alone lifts the ratio above 1.0 by shrinking the payment.</li>
+      </ul>
+
+      <p>Not sure what the property will rent for? On a purchase, the appraiser's market-rent opinion (Form 1007) typically sets the number, so a realistic local comp is a good stand-in. For short-term rentals, many lenders use 12 months of platform statements instead. Full details in our <a href="dscr-loans.html">DSCR loan guide</a>.</p>
+
+      <div class="cta-banner">
+        <h3>Like your number? Put it in front of a specialist.</h3>
+        <p>Two minutes, no credit check. Get matched with a specialist who closes DSCR loans every month.</p>
+        <a class="btn btn-primary" href="/?match=investor">Get matched with a specialist</a>
+      </div>
+
+      <div class="guide-related">
+        <p>Related: <a href="dscr-loans.html">DSCR loan guide</a> · <a href="bank-statement-loans.html">Bank statement loans</a> · <a href="asset-based-loans.html">Asset-based loans</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-legal">© 2026 Honest Casa LLC dba AdaptLend. All rights reserved. · NMLS #1566096 · DRE #02022356 · <a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a></p>
+      <p class="footer-legal">Estimates are educational only and not a loan offer or approval. AdaptLend is a mortgage lead-matching service, not a lender.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const rent = document.getElementById("rent");
+      const pitia = document.getElementById("pitia");
+      const result = document.getElementById("result");
+      const ratioEl = document.getElementById("ratio");
+      const verdictEl = document.getElementById("verdict");
+
+      function parse(v) {
+        return parseFloat(String(v).replace(/[^0-9.]/g, "")) || 0;
+      }
+
+      function update() {
+        const r = parse(rent.value);
+        const p = parse(pitia.value);
+        if (r > 0 && p > 0) {
+          const dscr = r / p;
+          ratioEl.textContent = dscr.toFixed(2);
+          verdictEl.textContent =
+            dscr >= 1.25 ? "Strong coverage — this is the range where DSCR pricing is at its best." :
+            dscr >= 1.0 ? "The rent covers the payment — most DSCR lenders are comfortable in this range." :
+            "Below 1.0 — still possible with some lenders; a larger down payment can lift the ratio.";
+          result.hidden = false;
+        } else {
+          result.hidden = true;
+        }
+      }
+
+      rent.addEventListener("input", update);
+      pitia.addEventListener("input", update);
+    })();
+  </script>
+
+</body>
+</html>

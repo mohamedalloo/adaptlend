@@ -201,6 +201,13 @@ document.querySelectorAll("[data-open-form]").forEach((btn) => {
 
 document.querySelector("[data-close-form]").addEventListener("click", closeForm);
 
+// guide pages link here as /?match=<seed> ("open" = unseeded) to launch the form directly
+const matchParam = new URLSearchParams(location.search).get("match");
+if (matchParam !== null) {
+  const seededBtn = document.querySelector(`[data-open-form][data-seed="${matchParam}"]`);
+  (seededBtn || document.querySelector("[data-open-form]")).click();
+}
+
 function closeForm() {
   overlay.hidden = true;
   document.body.style.overflow = "";

@@ -287,6 +287,29 @@ svg { display: block; }
 .review-card figcaption { font-size: 13px; color: var(--muted); }
 .review-card figcaption strong { display: block; color: var(--ink); font-weight: 600; font-size: 14px; }
 
+/* ---------- Guides grid (homepage) ---------- */
+.guides { padding: 0 0 104px; }
+.guides h2 { max-width: 640px; }
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+}
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.guide-card:hover { border-color: var(--ink); transform: translateY(-2px); }
+.guide-card-title { font-size: 16px; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; }
+.guide-card-desc { font-size: 14px; color: var(--muted); line-height: 1.5; }
+
 /* ---------- FAQ ---------- */
 .faq { padding: 0 0 104px; }
 .faq h2 { margin-bottom: 40px; }
@@ -349,6 +372,97 @@ svg { display: block; }
 .legal-page ul { padding-left: 22px; margin-bottom: 12px; }
 .legal-page a { color: var(--accent); }
 .site-footer a { color: inherit; }
+
+/* ---------- Guide pages ---------- */
+.guide-page { padding: 56px 0 96px; }
+.guide-page .container { max-width: 760px; }
+.crumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+.crumb a { color: var(--muted); }
+.guide-page h1 { font-size: clamp(30px, 4.4vw, 42px); margin-bottom: 14px; }
+.byline {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.guide-page h2 { font-size: 22px; margin: 42px 0 14px; }
+.guide-page h3 { font-size: 17px; margin: 26px 0 10px; }
+.guide-page p, .guide-page li { font-size: 16.5px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.guide-page ul, .guide-page ol { padding-left: 24px; margin-bottom: 14px; }
+.guide-page a { color: var(--accent); }
+.guide-page .lead { font-size: 18px; }
+.note-box {
+  background: var(--accent-soft);
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-size: 15px;
+  color: var(--accent);
+  margin: 20px 0;
+}
+.cta-banner {
+  background: var(--dark);
+  border-radius: 14px;
+  padding: 30px 32px;
+  margin: 44px 0;
+}
+.cta-banner h3 { color: #fff; font-size: 20px; margin: 0 0 8px; }
+.cta-banner p { color: var(--dark-muted); font-size: 15px; margin-bottom: 18px; }
+.guide-faq details { border-bottom: 1px solid var(--line); }
+.guide-faq details:first-of-type { border-top: 1px solid var(--line); }
+.guide-faq summary {
+  font-size: 16.5px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.guide-faq summary::-webkit-details-marker { display: none; }
+.guide-faq details p { color: var(--muted); font-size: 15.5px; padding: 0 32px 18px 0; }
+.guide-related { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); }
+.guide-related p { font-size: 14px; color: var(--muted); }
+
+/* ---------- Calculator ---------- */
+.calc {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px;
+  margin: 28px 0;
+}
+.calc .field-row { margin-bottom: 14px; }
+.calc label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.calc input {
+  width: 100%;
+  font: inherit;
+  font-size: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.calc input:focus { outline: none; border-color: var(--accent); }
+.calc-result {
+  margin-top: 20px;
+  padding: 20px 24px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+}
+.calc-result strong { font-size: 30px; letter-spacing: -0.02em; color: var(--accent); display: block; }
+.calc-result span { font-size: 14px; color: var(--ink); }
+
+/* ---------- Footer guide links ---------- */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-bottom: 22px;
+  font-size: 13px;
+}
+.footer-links a { color: var(--dark-muted); }
 
 /* ============ Match form overlay ============ */
 .form-overlay {
