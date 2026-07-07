@@ -50,6 +50,21 @@
 - [All guides](https://adaptlend.com/guides.html)
 - [About AdaptLend](https://adaptlend.com/about.html)
 
+## Specialist sites (AdaptLend services)
+
+- [RetiredRefi](https://retiredrefi.com/) — cash-out and refinancing for retirees, documented on savings; honest HELOC vs. reverse comparison.
+- [RetiredHomeLoans](https://retiredhomeloans.com/) — retiree purchases: downsizing, relocating, buy-before-you-sell.
+- [CloseInATrust](https://closeinatrust.com/) — mortgages and HELOCs that close with a trust or LLC on title.
+- [TravelNurseMortgage](https://travelnursemortgage.com/) — travel-nurse home loans: stipends and contracts counted.
+- [Loans for Realtors](https://loansforrealtors.com/) — gross-commission qualifying, the Realtor HELOC.
+- [Loans for Freelancers](https://loansforfreelancers.com/) — 1099/platform income, no W-2 required.
+- [Loans for Attorneys](https://loansforattorneys.com/) — new-partner K-1s, partnership buy-in HELOCs.
+- [Loans for Plumbers](https://loansforplumbers.com/) — trade-business deposits qualify; the Tradesman HELOC.
+- [Loans for Electricians](https://loansforelectricians.com/) — union OT documented; contractor deposit programs.
+- [Loans for Surgeons](https://loansforsurgeons.com/) — physician-program routing plus private-practice/locum lending.
+- [Loans for Developers](https://loansfordevelopers.com/) — bridge, construction, DSCR exit refinances.
+- [ThreeDayHELOC](https://threedayheloc.com/) — fast home-equity lines.
+
 ## How it works
 
 1. Borrower answers seven plain-English questions (about two minutes, no credit check, no login).
