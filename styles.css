@@ -1,17 +1,18 @@
 /* ============ AdaptLend — modern, sleek, minimal ============ */
 
 :root {
-  --bg: #fbfbf9;
+  --bg: #f6f8fb;
   --surface: #ffffff;
-  --ink: #101413;
-  --muted: #5c645f;
-  --line: #e5e7e2;
-  --accent: #0e5f45;
-  --accent-soft: #ecf4ef;
-  --dark: #0c100f;
-  --dark-muted: #9ba8a1;
-  --gold: #c9a227;
-  --radius: 12px;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: #e2e8f0;
+  --accent: #059669;
+  --accent-soft: #ecfdf5;
+  --dark: #0c1323;
+  --dark-muted: #94a3b8;
+  --gold: #f5b942;
+  --radius: 16px;
+  --navy: #10182d; --navy2: #0c1323; --green: #10b981; --green2: #34d399; --green-dark: #059669; --slate-l: #94a3b8;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -786,3 +787,73 @@ svg { display: block; }
 .powered-by { font-size: 13px; color: var(--muted, #9aa); margin: 0 0 14px; }
 .site-footer .powered-by { color: inherit; opacity: .85; }
 .powered-by a { color: inherit; font-weight: 600; }
+
+
+/* ===== ThreeDayHELOC design system layer ===== */
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif}
+h1,h2,h3{letter-spacing:-.02em}
+.btn{border-radius:99px;font-weight:700;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-primary{background:var(--green);box-shadow:0 10px 24px -8px rgba(16,185,129,.55)}
+.btn-primary:hover{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 16px 32px -10px rgba(16,185,129,.6)}
+.btn-primary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* Header — navy */
+.site-header{background:var(--navy);border-bottom:none;box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.site-header .logo{color:#fff}
+.site-header .logo span{color:var(--green2)}
+.site-header .logo-powered{color:var(--slate-l)}
+
+/* Hero — navy gradient + glows, floating situation bubbles */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 60%,#0a1f1a 100%);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,.22),transparent 65%);pointer-events:none}
+.hero::before{content:"";position:absolute;left:-160px;bottom:-200px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(245,185,66,.10),transparent 65%);pointer-events:none}
+.hero>.container{position:relative;z-index:2}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{color:#fff}
+.hero h1 em{color:var(--green2);font-style:normal}
+.hero-sub{color:#cbd5e1}
+.situations-label{color:#e2e8f0}
+.situation-card{background:rgba(255,255,255,.97);border:1px solid rgba(226,232,240,.9);border-radius:14px;box-shadow:0 14px 34px -10px rgba(2,8,23,.45);transition:box-shadow .3s,border-color .3s,transform .3s}
+.situation-card:hover{box-shadow:0 18px 42px -10px rgba(16,185,129,.55);border-color:rgba(52,211,153,.8);transform:translateY(-4px)}
+.situation-card:nth-child(1){animation:alfloat1 5.5s ease-in-out infinite alternate}
+.situation-card:nth-child(2){animation:alfloat2 6.5s ease-in-out infinite alternate}
+.situation-card:nth-child(3){animation:alfloat3 6s ease-in-out infinite alternate}
+.situation-card:nth-child(4){animation:alfloat4 7s ease-in-out infinite alternate}
+.situation-card:nth-child(5){animation:alfloat1 6.8s ease-in-out infinite alternate}
+.situation-card:nth-child(6){animation:alfloat2 5.8s ease-in-out infinite alternate}
+@keyframes alfloat1{from{transform:translateY(-3px)}to{transform:translateY(4px)}}
+@keyframes alfloat2{from{transform:translateY(4px)}to{transform:translateY(-4px)}}
+@keyframes alfloat3{from{transform:translateY(-4px)}to{transform:translateY(3px)}}
+@keyframes alfloat4{from{transform:translateY(3px)}to{transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){.situation-card{animation:none !important}}
+.situation-icon{background:var(--accent-soft);color:var(--green-dark)}
+
+/* Cards — hover lift + corner glow */
+.rates-card,.broker-card,.review-card,.guide-card{position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s}
+.rates-card:hover,.broker-card:hover,.review-card:hover,.guide-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -18px rgba(16,185,129,.38)}
+.broker-card::after,.guide-card::after{content:"";position:absolute;top:-60px;right:-60px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,.14),transparent 70%);pointer-events:none;transition:.4s}
+.broker-card:hover::after,.guide-card:hover::after{transform:scale(1.4)}
+.stars{color:var(--gold)}
+.step-num{background:var(--green);box-shadow:0 6px 16px -4px rgba(16,185,129,.5)}
+
+/* CTA banner (guide pages) */
+.cta-banner{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--navy),var(--navy2))}
+.cta-banner::after{content:"";position:absolute;right:-100px;top:-100px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,.22),transparent 65%);pointer-events:none}
+.cta-banner>*{position:relative;z-index:2}
+.cta-banner h3{color:#fff}
+.cta-banner p{color:#cbd5e1}
+
+/* Final CTA + footer — navy glow */
+.final-cta{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 60%,#0a1f1a 100%);position:relative;overflow:hidden}
+.final-cta::after{content:"";position:absolute;left:50%;top:-200px;transform:translateX(-50%);width:640px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,.2),transparent 65%);pointer-events:none}
+.final-cta>.container{position:relative;z-index:2}
+.final-cta h2{color:#fff}
+.site-footer{background:var(--navy2)}
+.site-footer .footer-logo span{color:var(--green2)}
+
+/* Survey skin accents */
+.form-progress-bar{background:linear-gradient(90deg,var(--green),var(--green2));box-shadow:0 0 12px rgba(16,185,129,.6)}
+.option-btn{border-radius:14px;box-shadow:0 6px 18px -12px rgba(2,8,23,.25);transition:border-color .2s,box-shadow .2s,transform .2s}
+.option-btn:hover{border-color:var(--green2);box-shadow:0 14px 30px -12px rgba(16,185,129,.4);transform:translateY(-2px)}
+.celebrate-badge{background:var(--green);box-shadow:0 0 60px rgba(16,185,129,.55)}
+.hl{color:var(--green-dark)}

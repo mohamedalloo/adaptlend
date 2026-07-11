@@ -526,7 +526,7 @@ function renderCelebration() {
 
 /* Brand-palette confetti: one restrained burst, then gone. */
 function launchConfetti() {
-  const colors = ["#0e5f45", "#2f8f68", "#bfe0d0", "#d4af37", "#101413"];
+  const colors = ["#10b981", "#34d399", "#f5b942", "#ffffff", "#1a2440"];
   const box = document.createElement("div");
   box.className = "confetti";
   for (let i = 0; i < 48; i++) {
