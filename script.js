@@ -4,6 +4,24 @@
 const SUPABASE_URL = "https://jaqtpjsnnsyxispgyzya.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_sXx0Rk_xOE6UmULnzQ94LA_ZdsWRnYW"; // publishable key — safe to expose; RLS is insert-only
 
+/* ---------- attribution (first-touch; survives same-site navigation) ---------- */
+const ATTR_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "msclkid", "fbclid"];
+(function captureAttribution() {
+  try {
+    if (sessionStorage.getItem("al_attr")) return;
+    const params = new URLSearchParams(location.search);
+    const attr = {
+      referrer: document.referrer || "",
+      landing_page: location.pathname + location.search,
+    };
+    ATTR_KEYS.forEach((k) => { const v = params.get(k); if (v) attr[k] = v.slice(0, 200); });
+    sessionStorage.setItem("al_attr", JSON.stringify(attr));
+  } catch (e) { /* storage unavailable — lead still submits without attribution */ }
+})();
+function getAttribution() {
+  try { return JSON.parse(sessionStorage.getItem("al_attr")) || {}; } catch (e) { return {}; }
+}
+
 /* Custom stroke icons, 24px grid. Rendered inside .opt-icon containers. */
 const ICONS = {
   key: '<circle cx="7.5" cy="15.5" r="3.5"/><path d="m10.3 12.7 8.2-8.2"/><path d="m15.5 7.5 3 3L22 7l-3-3"/>',
@@ -559,6 +577,7 @@ async function submitLead(lead) {
     amount: lead.amount,
     matched_product: lead.matched_product,
     ...lead.contact,
+    ...getAttribution(),
   };
   console.log("AdaptLend lead:", JSON.stringify(row, null, 2));
 
