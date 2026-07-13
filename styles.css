@@ -404,6 +404,14 @@ svg { display: block; }
   color: var(--accent);
   margin: 20px 0;
 }
+.state-table-wrap { overflow-x: auto; margin: 20px 0 28px; border: 1px solid var(--line); border-radius: 12px; }
+.state-table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; background: var(--surface); }
+.state-table th { text-align: left; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); background: var(--bg); padding: 10px 14px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.state-table td { padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.state-table tr:last-child td { border-bottom: none; }
+.state-table td:first-child { font-weight: 600; white-space: nowrap; }
+.state-table .muted-row td { color: var(--muted); background: var(--bg); }
+
 .cta-banner {
   background: var(--dark);
   border-radius: 14px;
