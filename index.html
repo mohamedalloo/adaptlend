@@ -22,63 +22,174 @@
 
   <!-- Structured data for search engines and AI assistants -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "FinancialService",
-        "@id": "https://adaptlend.com/#org",
-        "name": "AdaptLend",
-        "legalName": "Honest Casa LLC",
-        "url": "https://adaptlend.com/",
-        "description": "AdaptLend is a mortgage lead-matching service that pairs borrowers who don't fit conventional lending — self-employed, retired, real-estate investors, recent credit events, unusual properties — with vetted brokers who specialize in closing non-QM and non-conventional home loans.",
-        "areaServed": "US",
-        "knowsAbout": [
-          "Non-QM mortgages",
-          "Bank statement loans",
-          "DSCR investor loans",
-          "Asset-based / asset depletion loans",
-          "Fresh start loans after bankruptcy or foreclosure",
-          "Jumbo non-QM loans",
-          "Non-warrantable condo and specialty property loans",
-          "Foreign national and ITIN mortgages"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FinancialService",
+      "@id": "https://adaptlend.com/#org",
+      "name": "AdaptLend",
+      "legalName": "Honest Casa LLC",
+      "url": "https://adaptlend.com/",
+      "description": "AdaptLend is a mortgage lead-matching service that pairs borrowers who don't fit conventional lending — self-employed, retired, real-estate investors, recent credit events, unusual properties — with vetted brokers who specialize in closing non-QM and non-conventional home loans.",
+      "areaServed": "US",
+      "knowsAbout": [
+        "Non-QM mortgages",
+        "Bank statement loans",
+        "DSCR investor loans",
+        "Asset-based / asset depletion loans",
+        "Fresh start loans after bankruptcy or foreclosure",
+        "Jumbo non-QM loans",
+        "Non-warrantable condo and specialty property loans",
+        "Foreign national and ITIN mortgages"
+      ],
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NMLS ID",
+          "value": "1566096"
+        }
+      ],
+      "sameAs": [
+        "https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1566096"
+      ],
+      "employee": {
+        "@type": "Person",
+        "name": "Moh Alloo",
+        "jobTitle": "Mortgage Loan Originator",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "NMLS ID",
+          "value": "2732105"
+        },
+        "sameAs": [
+          "https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/2732105"
         ]
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://adaptlend.com/#website",
-        "url": "https://adaptlend.com/",
-        "name": "AdaptLend",
-        "publisher": { "@id": "https://adaptlend.com/#org" }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What does non-QM mean?",
-            "acceptedAnswer": { "@type": "Answer", "text": "QM stands for Qualified Mortgage — the standard, one-size-fits-all loan banks prefer. Non-QM simply means the loan is documented differently: with bank statements, savings, or rental income instead of a W-2. It's a real, regulated mortgage — just measured on what you actually have." }
-          },
-          {
-            "@type": "Question",
-            "name": "Will filling out the form hurt my credit?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. Our questions never touch your credit report. A credit check only happens later, if and when you choose to move forward with a broker." }
-          },
-          {
-            "@type": "Question",
-            "name": "Are non-QM rates higher than a regular bank loan?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Often somewhat, yes — flexibility has a price. Our brokers shop dozens of lenders to find the best rate your situation qualifies for, and if a conventional loan would actually serve you better, they'll say so." }
-          },
-          {
-            "@type": "Question",
-            "name": "What happens after I submit?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We match you with one to three brokers who specialize in loans like yours. One of them contacts you within a business day — a real person, licensed in your state, who has closed this exact kind of loan before." }
-          }
-        ]
+      "subOrganization": [
+        {
+          "@type": "FinancialService",
+          "@id": "https://loansforattorneys.com/#org",
+          "name": "LoansForAttorneys",
+          "url": "https://loansforattorneys.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://loansforsurgeons.com/#org",
+          "name": "LoansForSurgeons",
+          "url": "https://loansforsurgeons.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://loansforplumbers.com/#org",
+          "name": "LoansForPlumbers",
+          "url": "https://loansforplumbers.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://loansforrealtors.com/#org",
+          "name": "LoansForRealtors",
+          "url": "https://loansforrealtors.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://loansforelectricians.com/#org",
+          "name": "LoansForElectricians",
+          "url": "https://loansforelectricians.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://loansforfreelancers.com/#org",
+          "name": "LoansForFreelancers",
+          "url": "https://loansforfreelancers.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://loansfordevelopers.com/#org",
+          "name": "LoansForDevelopers",
+          "url": "https://loansfordevelopers.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://travelnursemortgage.com/#org",
+          "name": "TravelNurseMortgage",
+          "url": "https://travelnursemortgage.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://retiredrefi.com/#org",
+          "name": "RetiredRefi",
+          "url": "https://retiredrefi.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://retiredhomeloans.com/#org",
+          "name": "RetiredHomeLoans",
+          "url": "https://retiredhomeloans.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://closeinatrust.com/#org",
+          "name": "CloseInATrust",
+          "url": "https://closeinatrust.com/"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://www.threedayheloc.com/#org",
+          "name": "ThreeDayHELOC",
+          "url": "https://www.threedayheloc.com/"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://adaptlend.com/#website",
+      "url": "https://adaptlend.com/",
+      "name": "AdaptLend",
+      "publisher": {
+        "@id": "https://adaptlend.com/#org"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does non-QM mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "QM stands for Qualified Mortgage — the standard, one-size-fits-all loan banks prefer. Non-QM simply means the loan is documented differently: with bank statements, savings, or rental income instead of a W-2. It's a real, regulated mortgage — just measured on what you actually have."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will filling out the form hurt my credit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our questions never touch your credit report. A credit check only happens later, if and when you choose to move forward with a broker."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are non-QM rates higher than a regular bank loan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often somewhat, yes — flexibility has a price. Our brokers shop dozens of lenders to find the best rate your situation qualifies for, and if a conventional loan would actually serve you better, they'll say so."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after I submit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We match you with one to three brokers who specialize in loans like yours. One of them contacts you within a business day — a real person, licensed in your state, who has closed this exact kind of loan before."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

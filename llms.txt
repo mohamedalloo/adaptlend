@@ -65,6 +65,10 @@
 - [Loans for Developers](https://loansfordevelopers.com/) — bridge, construction, DSCR exit refinances.
 - [ThreeDayHELOC](https://threedayheloc.com/) — fast home-equity lines.
 
+## Sister brand
+
+- [LumoLend](https://lumolend.com/) — mortgage marketplace by the same company (Honest Casa LLC, NMLS #1566096): live indicative rates for purchase, refinance, DSCR rental, fix-and-flip bridge, and HELOC scenarios, each reviewed by a licensed loan officer.
+
 ## How it works
 
 1. Borrower answers seven plain-English questions (about two minutes, no credit check, no login).
